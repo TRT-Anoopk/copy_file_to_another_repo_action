@@ -40,7 +40,7 @@ fi
 
 echo "Adding git commit"
 git add .
-git reset README.md
+git reset -- README
 if git status | grep -q "Changes to be committed"
 then
   git commit --message "$INPUT_COMMIT_MESSAGE"
