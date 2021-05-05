@@ -39,7 +39,7 @@ then
 fi
 
 echo "Adding git commit"
-git add infrastructure/documentation infrastructure/modules infrastructure/README.md infrastructure/main.tf infrastructure/variables.tf
+git add infrastructure/documentation infrastructure/modules infrastructure/main.tf infrastructure/variables.tf
 if git status | grep -q "Changes to be committed"
 then
   git commit --message "$INPUT_COMMIT_MESSAGE"
